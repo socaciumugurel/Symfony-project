@@ -19,7 +19,7 @@ class ImageType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('fileLocation', FileType::class, array('label'=>'Inarcati o imagine sau pdf'))
+        $builder->add('fileLocation', FileType::class, array('label'=>'Recomandam ca dimensiunea imaginii sa fie 460 x 365'))
             ->add("save", SubmitType::class, array("label"=>'Adauga'));
     }
 

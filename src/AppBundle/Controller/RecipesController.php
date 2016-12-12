@@ -234,7 +234,7 @@ class RecipesController extends Controller
 
 
     /**
-     * @Route("/picture/{id}")
+     * @Route("/picture/{id}", name="newPicture")
      */
 
     public function uploadPicture(Request $request, Recipes $recipe)
@@ -253,11 +253,12 @@ class RecipesController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($picture);
             $em->flush();
-            return new Response("WOW");
+            return $this->redirect("/recipes");
         }
 
         return $this->render('default/newimg.html.twig', array(
-            'form' => $form->createView())
+            'form' => $form->createView(),
+                'recipe'=>$recipe)
         );
 
 

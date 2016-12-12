@@ -21,6 +21,7 @@
                 <a href="{{ path("recipeDetails", {id:recipe.id}) }}" class="btn btn-success">View</a>
                 <a href="{{ path("editRecipe",{id: recipe.id}) }}" class="btn btn-default">Edit</a>
                 <a href="{{ path("deleteRecipe", {id:recipe.id}) }}" class="btn btn-danger">Delete</a>
+                <a href="{{ path("newPicture", {id:recipe.id}) }}" class="btn btn-info">Add a new picture</a>
             </td>
         </tr>
     {% endfor %}

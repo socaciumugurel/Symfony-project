@@ -15,7 +15,10 @@
 
 {% block body %}
     <a class="btn btn-default" href="/recipes">Inapoi la retete</a>
-    <h2 class="page-header">{{ recipe.name }} <a href="{{ path("editRecipe",{id: recipe.id}) }}" class="btn btn-default">Editeaza reteta</a></h2>
+    <h2 class="page-header">{{ recipe.name }}
+        <a href="{{ path("editRecipe",{id: recipe.id}) }}" class="btn btn-default">Editeaza reteta</a>
+        <a href="{{ path("newPicture", {id:recipe.id}) }}" class="btn btn-info">Adauga o poza noua</a>
+    </h2>
 
 
 <div class="row">

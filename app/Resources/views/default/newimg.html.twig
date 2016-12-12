@@ -1,7 +1,13 @@
-<h1>Upload in image</h1>
+{% extends "base.html.twig" %}
+
+
+{%  block body %}
+<h1>Incarcati o imagine</h1>
 
 {{ form_start(form) }}
     {# ... #}
 
     {{ form_row(form.fileLocation) }}
 {{ form_end(form) }}
+
+{%  endblock %}
