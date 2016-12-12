@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    {#
+        <form action="{{ path('security_control') }}" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name=password" />
+
+            {#
+                If you want to control the URL the user
+                is redirected to on success (more details below)
+                <input type="hidden" name="_target_path" value="/account" />
+
+
+        <button type="submit">login</button>
+    </form>
+    #}
+
+    {#<div class="container login">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="user">User:</label>
+                <input type="text" class="form-control" id="user" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Parola">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>#}
+
+    <form action="{{ path('security_control') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="_password" />
+
+        {#
+            If you want to control the URL the user
+            is redirected to on success (more details below)
+            <input type="hidden" name="_target_path" value="/account" />
+        #}
+
+        <button type="submit">login</button>
+    </form>
+
+    <a href="{{ path('register') }}">Register</a>
+    {{ zzz }}
+
+{% endblock body %}

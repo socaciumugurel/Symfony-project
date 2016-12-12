@@ -1,0 +1,50 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<h2>Retetele noastre</h2>
+<table class="table table-striped" >
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>ToDo</th>
+        <th>Likes</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        {%  for recipe in recipes %}
+
+        <tr>
+            <th scope="row">{{ recipe.id }}</th>
+            <td>{{ recipe.name }}</td>
+            <td>{{ recipe.likes}}</td>
+            <td>
+                <a href="{{ path("recipeDetails", {id:recipe.id}) }}" class="btn btn-success">View</a>
+                <a href="{{ path("editRecipe",{id: recipe.id}) }}" class="btn btn-default">Edit</a>
+                <a href="{{ path("deleteRecipe", {id:recipe.id}) }}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+{% endblock body %}
+
+{#
+
+{% block body %}
+<h2>Recipes</h2>
+    <ul>
+        {% for msg in app.session.flashBag.get('success') %}
+            <div style="background-color: lightgreen">{{ msg }}</div>
+        {% endfor %}
+
+        {% for recipe in recipes %}
+            <h2>{{ recipe.name }}</h2>
+            #}
+{#<li>Id: {{ recipe.id }}</li>
+            <li>Mod de preparare: {{ recipe.method }}</li>
+            <li>Likes: {{ recipe.like }}</li>
+            <li>Rating: {{ recipe.rating }}</li>#}{#
+
+            <a href="{{ path('recipeDetails', {'id':recipe.id}) }}">Vezi mai multe detalii >>></a>
+        {% endfor %}
+    </ul>
+{% endblock body %}#}
