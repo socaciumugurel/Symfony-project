@@ -1,3 +1,11 @@
+#My personal project about Food
+
+In this project I made a website where you can make CRUD operations on the database using Symfony Framework. Also I made a login Session but there is no difference yet between simple client and user.
+ You will have to install the database first in order for program to work.
+
+
+
+
 Symfony Standard Edition
 ========================
 
