@@ -3,7 +3,25 @@
 In this project I made a website where you can make CRUD operations on the database using Symfony Framework. Also I made a login Session but there is no difference yet between simple client and user.
  You will have to install the database first in order for program to work.
 
-![alt tag](https://github.com/socaciumugurel/Symfony-project/blob/master/web/pictures/16292df895d8c3f0b001be80ef7f6625.jpeg)
+#Visualize the details of a recipe and leave a comment
+![alt tag](https://github.com/socaciumugurel/Symfony-project/blob/master/web/pictures/Untitled-1.jpg)
+
+
+#Visualize all the recipes
+![alt tag](https://github.com/socaciumugurel/Symfony-project/blob/master/web/pictures/Capture.JPG)
+
+
+#Register as new user
+
+![alt tag](https://github.com/socaciumugurel/Symfony-project/blob/master/web/pictures/Untitlede-1.jpg)
+
+
+#Edit a recipe details
+![alt tag](https://github.com/socaciumugurel/Symfony-project/blob/master/web/pictures/Untitlerrd-1.jpg)
+
+
+#Upload an image
+![alt tag](https://github.com/socaciumugurel/Symfony-project/blob/master/web/pictures/Untitleed-1.jpg)
 
 
 Symfony Standard Edition
